@@ -15,7 +15,7 @@ sh "docker build -t docker_test:latest ."
 }
 
 stage('Docker login to hub and push the image'){
-sh "docker login -u 'gideonkago' -p 'Kitale123$' "
+sh "docker login -u 'gideonkago' -p 'Kitale123' "
 sh "docker tag docker_test:latest gideonkago/docker_test:latest"
 sh "docker push gideonkago/docker_test:latest"
 }
